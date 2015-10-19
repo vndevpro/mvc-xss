@@ -18,7 +18,5 @@ namespace Demo.XBanking.Controllers
 
             return View();
         }
-
-
     }
 }
