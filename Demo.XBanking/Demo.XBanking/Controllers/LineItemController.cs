@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using Demo.XBanking.Models;
+using Microsoft.Security.Application;
 
 namespace Demo.XBanking.Controllers
 {
@@ -13,6 +14,8 @@ namespace Demo.XBanking.Controllers
         [HttpPost]
         public ActionResult New(LineItem item)
         {
+            var safeHtml = Sanitizer.GetSafeHtmlFragment(item.Message);
+
             return View(item);
         }
     }
