@@ -49,6 +49,10 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Rabbit.Cache, Version=1.1.1.28689, Culture=neutral, PublicKeyToken=8a07e38504ee8667, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rabbit.Cache.1.1.2\lib\Rabbit.Cache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Rabbit.Foundation, Version=1.0.0.15710, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Rabbit.Foundation.1.6.0\lib\Rabbit.Foundation.dll</HintPath>
       <Private>True</Private>
