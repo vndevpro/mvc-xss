@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Demo.XBanking.Data</id>
+    <version>1.0.0.0</version>
+    <title>Demo.XBanking.Data</title>
+    <authors>hhoangvan</authors>
+    <owners>hhoangvan</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>DESC</description>
+    <releaseNotes>XBanking Data.</releaseNotes>
+    <copyright>Copyright VNI 2015</copyright>
+  </metadata>
+  <files>
+    <file src="bin\Release\*.*" target="content" />
+    <file src="..\packages\EntityFramework.6.1.3\tools\migrate.exe" target="content" />
+    <file src="Scripts\Deploy.ps1" target="" />
+  </files>
+</package>

@@ -13,6 +13,8 @@ namespace Demo.XBanking.Data
 
         public string Version { get; set; }
 
+        public string ReleaseNotes { get; set; }
+
         public DateTime SetupDate { get; set; }
     }
 }
