@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.XBanking", "Demo.XBanking\Demo.XBanking.csproj", "{C75D76DF-BA9D-4F3F-9684-E5B53CD74C2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7BF52D33-B1CE-40B4-A075-69782249EE8E}"
@@ -11,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7BF52D
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.XBanking.Data", "Demo.XBanking.Data\Demo.XBanking.Data.csproj", "{8A61A7E0-3838-45F4-B053-5C885AA152B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +22,10 @@ Global
 		{C75D76DF-BA9D-4F3F-9684-E5B53CD74C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75D76DF-BA9D-4F3F-9684-E5B53CD74C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75D76DF-BA9D-4F3F-9684-E5B53CD74C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
