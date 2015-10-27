@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Content Include="Deploy.ps1" />
-    <None Include="Demo.XBanking.Data.nuspec" />
+    <Content Include="..\packages\EntityFramework.6.1.3\tools\migrate.exe">
+      <Link>migrate.exe</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
