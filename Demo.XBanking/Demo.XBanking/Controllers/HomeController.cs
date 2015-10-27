@@ -19,6 +19,7 @@ namespace Demo.XBanking.Controllers
         public ActionResult Index()
         {
             ViewBag.ListingCount = _listingService.Count();
+            ViewBag.ApplicationVersion = typeof(MvcApplication).Assembly.GetName().Version;
 
             var lastestVersion = _dbContext.Configurations.OrderByDescending(c => c.SetupDate).FirstOrDefault();
             if (lastestVersion != null)

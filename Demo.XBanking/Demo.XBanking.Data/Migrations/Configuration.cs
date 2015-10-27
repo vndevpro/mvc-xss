@@ -13,39 +13,14 @@ namespace Demo.XBanking.Data.Migrations
 
         protected override void Seed(XBankingDbContext context)
         {
-            if (!context.Configurations.Any())
-            {
-                context.Configurations.Add(new Data.Configuration()
-                {
-                    SetupDate = new DateTime(2015, 10, 10),
-                    Version = "1.0.0"
-                });
-            }
+            var version = typeof(Configuration).Assembly.GetName().Version.ToString();
 
-            if (!context.Configurations.Any(c => c.Version == "1.1.0"))
+            if (!context.Configurations.Any(c => c.Version == version))
             {
                 context.Configurations.Add(new Data.Configuration()
                 {
-                    SetupDate = new DateTime(2015, 10, 20),
-                    Version = "1.1.0"
-                });
-            }
-
-            if (!context.Configurations.Any(c => c.Version == "1.1.1"))
-            {
-                context.Configurations.Add(new Data.Configuration()
-                {
-                    SetupDate = new DateTime(2015, 10, 21),
-                    Version = "1.1.1"
-                });
-            }
-
-            if (!context.Configurations.Any(c => c.Version == "1.1.2"))
-            {
-                context.Configurations.Add(new Data.Configuration()
-                {
-                    SetupDate = new DateTime(2015, 10, 22),
-                    Version = "1.1.2"
+                    SetupDate = DateTime.Today,
+                    Version = version
                 });
             }
 
