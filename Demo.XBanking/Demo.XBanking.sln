@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.XBanking", "Demo.XBank
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.XBanking.Data", "Demo.XBanking.Data\Demo.XBanking.Data.csproj", "{8A61A7E0-3838-45F4-B053-5C885AA152B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.XBanking.Data.DatabaseUp", "Demo.XBanking.Data.DatabaseUp\Demo.XBanking.Data.DatabaseUp.csproj", "{B95F7C62-5E35-4C48-8DA0-DC56F180BD9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A61A7E0-3838-45F4-B053-5C885AA152B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B95F7C62-5E35-4C48-8DA0-DC56F180BD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95F7C62-5E35-4C48-8DA0-DC56F180BD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95F7C62-5E35-4C48-8DA0-DC56F180BD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95F7C62-5E35-4C48-8DA0-DC56F180BD9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

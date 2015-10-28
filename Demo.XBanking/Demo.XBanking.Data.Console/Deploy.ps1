@@ -1,1 +1,0 @@
-& .\Demo.XBanking.Data.DatabaseUp.exe
