@@ -19,7 +19,7 @@ namespace Demo.XBanking.Data.Migrations
             {
                 context.Configurations.Add(new Data.Configuration()
                 {
-                    SetupDate = DateTime.Today,
+                    SetupDate = DateTime.Now,
                     Version = version
                 });
             }
