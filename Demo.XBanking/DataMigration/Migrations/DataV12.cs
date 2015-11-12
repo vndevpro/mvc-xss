@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace DataMigration.Migrations
 {
-    public class DataV11 : IDataRevision
+    public class DataV12 : IDataRevision
     {
         private readonly XBankingDbContext _dbContext = Program.Context;
 
@@ -13,7 +13,7 @@ namespace DataMigration.Migrations
         {
             _dbContext.Configurations.Add(new Configuration()
             {
-                Version = "1.1.0",
+                Version = "1.2.0",
                 SetupDate = DateTime.Now,
                 ReleaseNotes = "Upgrade via DataUp"
             });
@@ -23,7 +23,7 @@ namespace DataMigration.Migrations
 
         public Version VersionNumber
         {
-            get { return new Version(1, 1); }
+            get { return new Version(1, 2); }
         }
 
         public IEnumerable<string> Tags
@@ -31,10 +31,11 @@ namespace DataMigration.Migrations
             get
             {
                 return new List<string>()
-                    {
-                        "Demo1",
-                        "Dev"
-                    };
+                {
+                    "",
+                    "Demo2",
+                    "Dev",
+                };
             }
         }
     }

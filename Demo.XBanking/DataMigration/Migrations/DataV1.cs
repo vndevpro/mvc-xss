@@ -1,6 +1,7 @@
 ﻿using Demo.XBanking.Data;
 using Rabbit.DataUp;
 using System;
+using System.Collections.Generic;
 
 namespace DataMigration.Migrations
 {
@@ -23,6 +24,11 @@ namespace DataMigration.Migrations
         public Version VersionNumber
         {
             get { return new Version(1, 0); }
+        }
+
+        public IEnumerable<string> Tags
+        {
+            get { return new List<string>(); }
         }
     }
 }

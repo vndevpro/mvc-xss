@@ -1,6 +1,7 @@
 ﻿using Demo.XBanking.Data;
 using Rabbit.DataUp;
 using System;
+using System.Linq;
 
 namespace DataMigration
 {
@@ -12,7 +13,10 @@ namespace DataMigration
         {
             try
             {
-                var executedTypes = DataUpExecution.Initialize(typeof(Program).Assembly).PerformUpdate();
+                var tag = GetTag(args);
+                Console.WriteLine("Found tag: {0}" + tag);
+
+                var executedTypes = DataUpExecution.Initialize(tag, typeof(Program).Assembly).PerformUpdate();
 
                 // Save all changes made to the application db context
                 Context.SaveChanges();
@@ -28,6 +32,15 @@ namespace DataMigration
             {
                 Console.WriteLine("Error: {0}", ex);
             }
+        }
+
+        static string GetTag(string[] args)
+        {
+            if (args.Any(x => x.StartsWith("/t:")))
+            {
+                return args.First(x => x.StartsWith("/t:")).Substring("/t:".Length - 1);
+            }
+            return string.Empty;
         }
     }
 }
